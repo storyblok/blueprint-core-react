@@ -61,7 +61,7 @@ npm run dev
 ```
 
 > [!IMPORTANT]
-> To connect the Storyblok Visual Editor, the local project must run over HTTPS. Learn more in the [Visual Editor concept](https://www.storyblok.com/docs/concepts/visual-editor#local-development-via-https). See the [Visual Preview part of the React guide](https://storyblok.com/docs/guides/react) for detailed instructions.
+> To connect the Storyblok Visual Editor, the local project must run over HTTPS. Learn more in the [Visual Editor concept](https://www.storyblok.com/docs/concepts/visual-editor#local-development-via-https). See the [Visual Preview part of the React guide](https://storyblok.com/docs/guides/react/visual-preview) for detailed instructions.
 
 Back in Storyblok, open the **Home** story to start editing.
 
