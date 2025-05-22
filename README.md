@@ -2,7 +2,7 @@
 
 Integrate [React](https://react.dev/) with [Storyblok](http://www.storyblok.com) as a headless CMS.
 
-This blueprint is ideal for kickstarting new Storyblok and Next.js projects. What's inside:
+This blueprint is ideal for kickstarting new Storyblok and React projects. What's inside:
 - Pre-configured default blocks: `page`, `teaser`, `grid`, and `feature`.
 - Support for the Visual Editor's live preview.
 - Dynamic routing to fetch and render new stories automatically.
@@ -54,9 +54,9 @@ To render a preview of the local project in the Visual Editor, follow these step
 5. Click **Config**.
 6. Type `/` in the **Real path**.
 
-Run the development server with HTTPS enabled:
+Run the development server:
 ```sh
-npx next dev
+npm run dev
 ```
 
 > [!IMPORTANT]
