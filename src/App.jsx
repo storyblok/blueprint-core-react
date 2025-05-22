@@ -5,7 +5,6 @@ export default function App() {
 	const { '*': slug } = useParams();
 	const story = useStoryblok(slug || 'home', {
 		version: 'draft',
-		resolve_relations: 'featured_articles.articles',
 	});
 	if (!story?.content) {
 		return <div>Loading...</div>;

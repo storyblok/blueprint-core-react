@@ -10,25 +10,23 @@ import Page from './storyblok/Page';
 import Teaser from './storyblok/Teaser';
 import Feature from './storyblok/Feature';
 import Grid from './storyblok/Grid';
-import Article from './storyblok/Article';
-import ArticleOverview from './storyblok/ArticleOverview';
-import FeaturedArticles from './storyblok/FeaturedArticles';
 
 storyblokInit({
-	accessToken: import.meta.env.VITE_STORYBLOK_ACCESS_TOKEN,
+	accessToken: import.meta.env.VITE_STORYBLOK_DELIVERY_API_TOKEN,
+	apiOptions: {
+		/** Set the correct region for your space. Learn more: https://www.storyblok.com/docs/packages/storyblok-js */
+		region: 'eu',
+		/** The following code is only required when creating a Storyblok space directly via the Blueprints feature. */
+		endpoint: import.meta.env.VITE_STORYBLOK_API_BASE_URL
+			? `${new URL(import.meta.env.VITE_STORYBLOK_API_BASE_URL).origin}/v2`
+			: undefined,
+	},
 	use: [apiPlugin],
 	components: {
 		page: Page,
 		teaser: Teaser,
 		feature: Feature,
 		grid: Grid,
-		article: Article,
-		article_overview: ArticleOverview,
-		featured_articles: FeaturedArticles,
-	},
-	enableFallbackComponent: true,
-	apiOptions: {
-		region: 'eu', // "eu" is the default region
 	},
 });
 const router = createBrowserRouter([
