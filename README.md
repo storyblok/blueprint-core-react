@@ -36,7 +36,7 @@ npm install
 In the root of the project, create a `.env` file to store the Storyblok access token:
 
 ```sh
-VITE_STORYBLOK_DELIVERY_API_TOKEN=<REPLACE_WITH_YOUR_TOKEN>
+STORYBLOK_DELIVERY_API_TOKEN=<REPLACE_WITH_YOUR_TOKEN>
 ```
 
 > [!IMPORTANT]
