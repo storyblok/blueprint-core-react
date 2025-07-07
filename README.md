@@ -1,4 +1,4 @@
-# Storyblok Starter Space Blueprint: React
+# Storyblok Core Space Blueprint: React
 
 Integrate [React](https://react.dev/) with [Storyblok](http://www.storyblok.com) as a headless CMS.
 
