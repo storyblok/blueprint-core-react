@@ -1,11 +1,9 @@
-import { StoryblokBlock } from '../storyblok';
+import { StoryblokBlocks } from '../storyblok';
 
 export default function Grid({ block, editable }) {
 	return (
 		<div {...editable} className="grid">
-			{block.columns.map((nestedBlok) => (
-				<StoryblokBlock block={nestedBlok} key={nestedBlok._uid} />
-			))}
+			{block.columns && <StoryblokBlocks blocks={block.columns} />}
 		</div>
 	);
 }
